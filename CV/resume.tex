@@ -1,0 +1,365 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Resume/CV
+% XeLaTeX Template
+% Version 1.1 (9/1/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Claud D. Park (posquit0.bj@gmail.com) with modifications by
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template must be compiled with XeLaTeX, the below lines will ensure this
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[12pt, a4paper]{awesome-cv}
+
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+
+%%% Location of fonts
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+% \newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-concrete}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Prakhar}{Agarwal}
+% \address{}
+\mobile{(+91)9468652335} 
+%%% Social
+\email{pkhrag@iitk.ac.in}
+\homepage{home.iitk.ac.in/~pkhrag}
+\github{pkhrag}
+%\linkedin{posquit0}
+%%% Optionals
+\position{THIRD YEAR UNDERGRADUATE{\enskip\cdotp\enskip}Computer Science and Engineering, IIT Kanpur}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Prakhar Agarwal~~~·~~~Résumé}
+  {\thepage}
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+% %%% Import contents
+% \import{\sectiondir}{education.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+% {\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cventries}
+  \cventry
+    {Bachelor of Technology, Computer Science and Engineering}
+    {IITK (Indian Institute of Technology, Kanpur)}
+    {Kanpur, India}
+    {2015 - 2019 (Expected)}
+    {
+      \begin{cvitems}
+        \item {Cumulative Grade Point/ CPI :\textbf{ 9.6/10.0} }
+      \end{cvitems}
+    }
+    \vspace{0.2cm}
+  \cventry
+    {CBSE}
+    {Kendriya Vidyalaya, Jhalawar}
+    {Rajasthan, India}
+    {2013}
+    {
+      \begin{cvitems}
+        \item {$10 ^{th}$ GRADE | CGPA \textbf{10.0/10.0}}      
+      \end{cvitems} 
+    }
+    \vspace{0.2cm}
+  \cventry
+    {RBSE}
+    {Central Public School}
+    {Rajasthan, India}
+    {2013}
+    {
+      \begin{cvitems}
+        \item {$12 ^{th}$ GRADE | Aggregate \textbf{89.8\%}}      
+      \end{cvitems} 
+    }
+
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.3cm}
+\cvsection{Honors \& Awards}
+% {\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cvhonors}
+  \cvhonor
+    {All India Rank 126}
+    {among 1.2 million students in JEE ADVANCED}
+    {India}
+    {2015}
+  \cvhonor
+    {Academic Excellence Award}
+    {IIT Kanpur}
+    {Kanpur, India}
+    {2015-16}
+  \cvhonor
+    {0.1 Percentile}
+    {JEE MAINS}
+    {India}
+    {2015}
+  \cvhonor
+    {KVPY Fellow | All India Rank 232}
+    {IISc Bangalore and Government of India}
+    {Bangalore, India}
+    {2014}
+  \cvhonor
+    {1 Percentile}
+    {Physics Olympiad (NSEP) | HBCSE}    
+    {Rajasthan, India}
+    {2014}  
+  \cvhonor
+    {Qualified}
+    {Chemistry Olympiad (NSEC) | HBCSE}
+    {Rajasthan, India}
+    {2014}
+
+\end{cvhonors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\cvsection{Projects}
+% {\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+
+\begin{cventries}
+  \cventry
+    {Project, Prof. Sandeep Shukla}
+    {Malware Classification using Machine Learning}
+    {IIT Kanpur}
+    {August 2017 - Present}
+    {
+      \begin{cvitems}
+      \item The aim of the project is to classify android malware using one-shot learning.
+      \item We plan to use a bidirectional LSTM to embed the training and test samples to get an encoding of the sample, which is then used to classify it.
+      \end{cvitems}
+    }
+  \cventry
+    {Course Project, Prof. Sandeep Shukla}
+    {Securing Zoobar Server}
+    {IIT Kanpur}
+    {Jan 2017 - April 2017}
+    {
+      \begin{cvitems}
+      \item Found various security vulnerabilities in the server code.
+      \item Exploited vulnerabilities using control hijacking techniques like buffer overflow and format string attacks.
+      \item Performed various browser-based attacks like SQL injection, XSS, CSRF on Zoobar web application.
+      \item Fixed security bugs in web server, implemented privilege separation and server side sand-boxing of executable profiles in okws server.
+      \end{cvitems}
+    }
+  \cventry
+    {Member, Team AUV-IITK, Prof. K.S. Venkatesh \& Prof. Sachin Shinde}
+    {Autonomous Underwater Vehicle\ \ \ \texttt{\href{https://github.com/AUV-IITK}{github.com/AUV-IITK}}\ \ \ \texttt{\href{https://drive.google.com/file/d/0B8_5kUnCr-WzbnRGV01lcEVTWDA/view?usp=sharing}{REPORT}} }
+    {IIT Kanpur}
+    {December 2015 - April 2017}
+    {
+      \begin{cvitems}
+        \item {Leader Software Subsystem of team AUV-IITK.}
+        \item {First Runner-ups at the National level Competition SAVe-NIOT (2016) in debut attempt.}
+        \item {The aim of the Robot is detecting and following a line, hitting a buoy, firing torpedoes at given targets and dropping objects underwater.}
+        \item {Implemented the tasks using Robot Operating System (ROS) for Controls, OpenCV for Image Processing and Gazebo for simulation.}        
+      \end{cvitems}
+    }
+  \cventry
+  {Course Project, Prof. Purushottam Kar}
+  {Text Generation}
+  {IIT Kanpur}
+  {August 2017 - Present}
+  {
+      \begin{cvitems}
+              \item The aim of our project is to capture the artistic style of an author and then generate text in that same style.
+              \item We use character-level language models using multi-layered RNNs/LSTM and attention models on top of that to account for long-term dependencies.
+              \item As an alternative approach, we also aim to use neural style transfer for text in a fashion similar to artistic style transfer for images by Gatys et al.
+      \end{cvitems}
+  }
+  \cventry
+    {Semester Project, ACA}
+    {Introduction to Game Theory \texttt{\href{https://github.com/pkhrag/ACA-Project-Game-Theory}{github.com/pkhrag/ACA-Project-Game-Theory}}}
+    {IIT Kanpur}	
+    {January 2016 - April 2016}
+    {
+      \begin{cvitems}
+    	\item Developed an AI for zero-sum games like Tic-Tac-Toe and Connect-4.
+    	\item Used min-max algorithm with alpha-beta optimization and heuristic functions.
+        \item Explored Monte Carlo Simulation for computing better heuristic function.
+    	\item Implemented feature of connecting two AIs over a network using ZeroMQ library.
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+\cvsection{Work Experience}
+\begin{cventries}
+    \cventry
+    {IT Department, Security Team}
+    {Bombay Stock Exchange}
+    {Bombay, India}
+    {May 2017 - July 2017}
+    {
+        \begin{cvitems}
+            \item Worked on designing and imporving Network security architecture of Bombay Stock Exchange with IBM. 
+            \item Found vulnerabilities in the network and audited SEBI compliance of Bombay Stock Exchange. 
+        \end{cvitems}
+    }
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Relevant Courses}
+\vspace{-0.3cm}
+{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{tabular}{l l l}
+\textbf{\textit{Completed}}\\
+ Computer System Security & Computer Organization & Linear Algebra\\ 
+ Data Structures and Algorithms & Probability and Statistics* & Partial Differential Equation\\
+ Discrete Mathematics  & Multivariable Calculus & Abstract Algebra\\
+    Introduction to Electronics & Logic in Computer Science & Introduction to Programming \\
+ Computer Laboratory & Introduction to Economics\\
+ 
+\textbf{\textit{Ongoing}}\\
+    Operating Systems & Advanced Algorithms & Computational Complexity Theory\\
+ Machine Learning Techniques & Computer Networks & Theory of Computation\\
+
+ {\footnotesize  * : A* Grade for exceptional performance}\\
+ \end{tabular}
+ }
+% {\fontsize{11pt}{1em}\footerfont\upshape\color{text}
+% \begin{tabular*}{\textwidth}{L{8.4cm} L{3cm} L{3.5cm}}
+%   \entrylocationstyle{$*$: A* Grade for exceptional performance(Awarded to top $1\%$ of the class)}\\
+% \end{tabular*}
+% }
+\vspace{-0.3cm}
+% \begin{tabular}{l l l}
+% \textbf{\textit{Completed}}\\
+%  Introduction to Programming* & Partial Differential Equation & Linear Algebra*\\ 
+%  Introduction to Electrodynamics & Multivariable Calculus* & Abstract Algebra\\
+%  Introduction to Classical Mechanics & Discrete Mathematics & Thermodynamics\\
+%  Introduction to Electronics & Logic in Computer Science\\
+% \textbf{\textit{Ongoing}}\\
+%  Data Structures and Algorithms & Probability and Statistics & Computer Organization\\
+%  System Security & Machine Learning(Coursera)\\ 
+%  \vspace{0.4cm}
+%  {\footnotesize * : Grade for Exceptional Performance }
+%  \end{tabular}
+%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Skills}
+% {\fontsize{13pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cvskills}
+
+  % ------------------------------------------------
+
+  \cvskill
+  {Programming}
+  {C/C++, Python, X86 Assembly, ROS, Octave, MIPS, Verilog, R }
+
+  % ------------------------------------------------
+
+  \cvskill
+  {Web}
+  {JavaScript, HTML, CSS, SQL}
+
+  % ------------------------------------------------
+
+  \cvskill
+  {Utilities}
+  {Bash, Git, GDB, \LaTeX, Sublime, Vim, Numpy, OpenCV}
+  
+  % ------------------------------------------------
+  \cvskill
+  {Platforms}
+  {Windows, Linux(Ubuntu), Arduino, Android, FPGA}
+\end{cvskills}
+
+
+
+\cvsection{Positions of Responsibility}
+% {\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cventries}
+
+  \cventry
+    {Academic Mentor}
+    {Counselling Service (IITK)}
+    {IITK}
+    {August 2016 - July 2017}
+    {
+      \begin{cvitems}
+        \item {Helped students to cope up with academics.}
+        \item {Took institute level doubt sessions for Fundamentals of Computing course.}
+      \end{cvitems}
+    }
+    \vspace{0.2cm}
+  \cventry
+  {Departmental Student Body Coordinator}
+  {ACA IITK}
+  {IITK}
+  {January 2017 - Present}
+  {
+    \begin{cvitems}
+    \item Conducted various events in the department like CTF, games, happy hour, departmental trip etc.
+    \end{cvitems}
+  }
+    \vspace{0.2cm}
+  \cventry
+  {Project Mentor}
+  {Programming Club, IITK}
+  {IITK}
+  {May 2017 - July 2017}
+  {
+    \begin{cvitems}
+    \item Mentored 20 students on a project Ethical Hacking.
+    \end{cvitems}
+  }
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \cvsection{Miscellaneous}
+% % {\fontsize{11pt}{eh1em}\bodyfontlight\upshape\color{text}
+% \begin{cvhonors}
+%   \cvhonor
+%     {Presentation}
+%     {on Diophantine Equations and Chinese Remainder Theorem}
+%     {IITK}
+%     {2016}
+
+% \end{cvhonors}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

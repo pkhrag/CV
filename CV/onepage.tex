@@ -1,0 +1,281 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Resume/CV
+% XeLaTeX Template
+% Version 1.1 (9/1/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Claud D. Park (posquit0.bj@gmail.com) with modifications by
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template must be compiled with XeLaTeX, the below lines will ensure this
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=2cm, top=.8cm, right=2cm, bottom=1.4cm, footskip=.5cm} % Configure page margins with geometry
+
+%%% Location of fonts
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+% \newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-concrete}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Soumye}{Singhal}
+% \address{}
+\mobile{(+91)7054122337} 
+%%% Social
+\email{soumye@iitk.ac.in}
+\email{singhalsoumye@gmail.com}
+\homepage{home.iitk.ac.in/~soumye}
+\github{soumye}
+%\linkedin{posquit0}
+%%% Optionals
+\position{SECOND YEAR UNDERGRADUATE{\enskip\cdotp\enskip}Computer Science and Engineering, IITK}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+% \makecvfooter
+%   {\today}
+%   {Soumye Singhal~~~·~~~Résumé}
+%   {\thepage}
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+% %%% Import contents
+% \import{\sectiondir}{education.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cventries}
+  \cventry
+    {Bachelor of Techonology, Computer Science and Engineering}
+    {IITK (Indian Institute of Technology, Kanpur)}
+    {Kanpur, India}
+    {2015 - 2019 (Expected)}
+    {
+      \begin{cvitems}
+        \item {Cumulative Grade Point/ CPI :\textbf{ 9.8/10.0} }
+      \end{cvitems}
+    }
+  \cventry
+    {CBSE}
+    {BAL BHARATI PUBLIC SCHOOL, PITAMPURA}
+    {New Delhi, India}
+    {2013, 2015}
+    {
+      \begin{cvitems}
+        \item {$10$th GRADE| CGPA \textbf{10.0/10.0}}      
+        \item {$12$th GRADE| Aggregate \textbf{95.4\%}}  
+      \end{cvitems} 
+    }
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Honors \& Awards}
+{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cvhonors}
+  \cvhonor
+    {All India Rank 579}
+    {JEE ADVANCED}
+    {India}
+    {2015}
+  \cvhonor
+    {0.1 Percentile}
+    {JEE MAINS}
+    {India}
+    {2015}
+  \cvhonor
+    {KVPY Fellow | All India Rank 272}
+    {IISc Bangalore and Government of India}
+    {Bangalore, India}
+    {2014}
+  \cvhonor
+    {JSTSE Scholarship Awardee}
+    {Government of Delhi}
+    {Delhi,India}
+    {2012}
+  \cvhonor
+    {All India Top 30 }
+    {Group Mathematics Olympiad | CBSE}    
+    {Delhi,India}
+    {2013}
+\end{cvhonors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Projects}
+{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cventries}
+  \cventry
+    {Member, Team AUV-IITK, Prof. K.S. Venkatesh \& Prof. Sachin Shinde}
+    {Autonomous Underwater Vehicle (AUV)\ \ \ \ \ \texttt{\href{https://github.com/AUV-IITK}{github.com/AUV-IITK}}}
+    {IIT Kanpur}
+    {May 2016 - PRESENT}
+    {
+      \begin{cvitems}
+        % \item {Part of the team that built our institue's first AUV. }
+        \item {Were placed 2nd at the national level competion SAVe, organized by NIOT Chennai.}
+        \item {The Robot follows a detected line, hits a buoy, fires torpedoes at given targets and drops objects underwater.}
+        \item {Implemented the tasks using Robot Operating System (ROS) for Controls and OpenCV for Image Processing.}        
+      \end{cvitems}
+    }
+  \cventry
+    {Summer Project, Programming Club}
+    {GymkhanaLive: NEWS Webapp\ \ \ \ \  \texttt{\href{https://github.com/soumye/gymkhanalive}{github.com/soumye/gykhanalive}}}
+    {IIT Kanpur}	
+    {May 2016 - July 2016}
+    {
+      \begin{cvitems}
+    	\item Programmed a News Web Application using Django for the use of the campus community.
+    	\item The website displays the news and events of the various clubs and groups on campus.
+    	% \item Implemented features like login, search, like and comment.
+      \end{cvitems}
+    }
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Relevant Courses}
+{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{tabular}{l l l}
+\textbf{\textit{Completed}}\\
+ Introduction to Programming* & Partial Differential Equation & Linear Algebra*\\ 
+ Introduction to Electrodynamics & Multivariable Calculus* & Abstract Algebra\\
+ Introduction to Electronics & Discrete Mathematics & Logic in Computer Science\\
+\textbf{\textit{Ongoing}}\\
+ Data Structures and Algorithms & Probability and Statistics & Computer Organization\\
+ Computer System Security & Computer Laboratory & Introduction to Economics\\
+
+ {\footnotesize *\ : A* Grade for exceptional performance}
+ \end{tabular}% {\fontsize{11pt}{1em}\footerfont\upshape\color{text}
+% \begin{tabular*}{\textwidth}{L{8.4cm} L{3cm} L{3.5cm}}
+%   \entrylocationstyle{$*$: A* Grade for exceptional performance(Awarded to top $1\%$ of the class)}\\
+% \end{tabular*}
+% }
+% \vspace{-0.5cm}
+% \begin{tabular}{l l l}
+% \textbf{\textit{Completed}}\\
+%  Introduction to Programming* & Partial Differential Equation & Linear Algebra*\\ 
+%  Introduction to Electrodynamics & Multivariable Calculus* & Abstract Algebra\\
+%  Introduction to Classical Mechanics & Discrete Mathematics & Thermodynamics\\
+%  Introduction to Electronics & Logic in Computer Science\\
+% \textbf{\textit{Ongoing}}\\
+%  Data Structures and Algorithms & Probability and Statistics & Computer Organization\\
+%  System Security & Machine Learning(Coursera)\\ 
+%  \vspace{0.4cm}
+%  {\footnotesize * : Grade for Exceptional Performance }
+%  \end{tabular}
+%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Skills}
+{\fontsize{12pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cvskills}
+
+  % ------------------------------------------------
+
+  \cvskill
+  {Programming}
+  {C/C++, Python, X86 Assembly, ROS, OpenCV}
+
+  % ------------------------------------------------
+
+  \cvskill
+  {Web}
+  {Django, JavaScript, HTML, CSS}
+
+  % ------------------------------------------------
+
+  \cvskill
+  {Utilities}
+  {Linux shell utilities, Git, GDB, \LaTeX, Sublime, Vim, Octave}
+  
+  % ------------------------------------------------
+  \cvskill
+  {Platforms}
+  {Windows, Linux(Ubuntu), Arduino, Android}
+\end{cvskills}
+
+
+
+\cvsection{Extracurricular Activity}
+{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cventries}
+
+  \cventry
+    {Secretary}
+    {Programming Club (IITK)}
+    {}
+    {Jul. 2016 - PRESENT}
+    {
+      \begin{cvitems}
+        \item {Helped organize Linux Installation Drive, Freshers Proramming Contest and other activites.}
+        \item {Helped in the functioning of the club by organizing contests and lectures on various topics.}
+      \end{cvitems}
+    }
+  % \cventry
+  %   {Active Member \& Secretary}
+  %   {Science Coffee House}
+  %   {}
+  %   {Jul. 2016 - PRESENT}
+  %   {
+  %     \begin{cvitems}
+  %       \item {Part of a Hobby Group that regularly meets to discuss about various interesting scientific topics.}
+  %     \end{cvitems}
+  %   }
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Miscellaneous}
+{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text}
+\begin{cvhonors}
+  \cvhonor
+    {Presentation Project}
+    {Diophantine Equations (Under Prof. Nitin Saxena)}
+    {IITK}
+    {2016}
+  \cvhonor
+    {\href{https://github.com/soumye/SportCenter}{Google Devfest}}
+    {Weather and Sports App}
+    {IITK}
+    {2016}    
+  \cvhonor
+    {Electromania}
+    {Made an Egg-Basket game using Digital IC's and logic gates.}
+    {IITK}
+    {2015}
+\end{cvhonors}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
